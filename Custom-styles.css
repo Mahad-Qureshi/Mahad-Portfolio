@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.flexContainer,
+.flexColumn,
+.flexCenter,
+.flexContainer2 {
+    display: flex;
+    gap: 20px;
+}
+
+.flexContainer {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexCenter {
+    align-items: center;
+    justify-content: center;
+}
+
+.flexNoGap {
+    display: flex;
+    align-items: center;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.pageWidth {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.sectionPadding {
+    padding: 75px 15px;
+}
+
+.row {
+    text-align: center;
+}
+
+.hiddenfordesk {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+.smallCol {
+    width: 40%;
+}
+
+.largeCol {
+    width: 60%;
+}
+
+.col1,
+.col2 {
+    width: 50%;
+}
+
+.backgroundSize {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    width: auto;
+    padding: 12px 18px;
+    margin: 0px 0px;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 25px;
+    user-select: none;
+    background-color: #DBF4FF;
+    color: #000;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hiddenfordesk {
+        display: unset;
+    }
+
+    .hiddenforTab {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .col1,
+    .col2,
+    .smallCol,
+    .largeCol {
+        width: 100%;
+    }
+
+    .hiddenformob {
+        display: none;
+    }
+}
