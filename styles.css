@@ -7,6 +7,10 @@ body {
     background-color: #292F36;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -99,6 +103,148 @@ h3 {
 .miniCol {
     width: 25%;
 }
+
+/* Sidebar Start */
+section {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.straithLine {
+    height: 240px;
+    width: 1px;
+    background-color: #12F7D6;
+}
+
+.socialContainerFixed {
+    border-radius: 50px;
+    border: 1px solid #12F7D6;
+    padding: 5px;
+}
+
+.socialContainerFixed img {
+    width: 30px;
+    margin: 10px 0px;
+}
+
+.sidebar,
+.sidebar2 {
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+    height: 40%;
+    position: fixed;
+    overflow: auto;
+    align-content: center;
+    box-shadow: 0px 3px 21px #00000070;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+.sidebar {
+    top: 30%;
+    width: 50px;
+    background-color: #12F7D6;
+}
+
+.sidebar2 {
+    align-content: end;
+    border-radius: unset;
+    height: 100%;
+    margin-right: 5px;
+    top: 0%;
+    right: 0;
+    width: 50px;
+    background-color: transparent !important;
+    box-shadow: unset;
+    place-items: center;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    /* padding: 16px; */
+    text-decoration: none;
+    text-align: center;
+}
+
+.menuIconContainer i {
+    margin: 15px 0px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: 1px solid #1A1E23;
+    width: 30px;
+    height: 30px;
+    align-content: center;
+    color: #1A1E23;
+}
+
+.sidebar:hover {
+    background-color: #1A1E23;
+}
+
+.sidebar2:hover {
+    background-color: transparent !important;
+}
+
+.sidebar:hover .menuIconContainer i {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+div.content {
+    /* margin-left: 200px; */
+    /* padding: 1px 16px; */
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        top: 0;
+        position: fixed;
+        margin: 0px;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    .sidebar2 {
+        display: none;
+    }
+
+    .menuIconContainer {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+/* Sidebar End */
 
 /* Header Start */
 .headerMain {
@@ -212,6 +358,11 @@ h3 {
     border-bottom-right-radius: 100px;
     border-top-left-radius: 100px;
     box-shadow: -3px -2px 2px 0px #12F7D6;
+    transition: 0.5s;
+}
+
+.infoCard:hover {
+    box-shadow: 3px 2px 2px 0px #12F7D6;
 }
 
 .heroInner p {
