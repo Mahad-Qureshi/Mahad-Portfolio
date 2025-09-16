@@ -216,6 +216,7 @@ div.content {
         top: 0;
         position: fixed;
         margin: 0px;
+        z-index: 999;
     }
 
     .sidebar a {
@@ -273,13 +274,13 @@ div.content {
     list-style-type: none;
 }
 
-.menu li {
+.menu li a{
     color: #ffffff;
     font-size: 20px;
     transition: 0.5s;
 }
 
-.menu li:hover {
+.menu li a:hover {
     color: #12F7D6;
     cursor: pointer;
 }
