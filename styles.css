@@ -114,6 +114,7 @@ section {
     height: 240px;
     width: 1px;
     background-color: #12F7D6;
+    transition: 0.5s;
 }
 
 .socialContainerFixed {
@@ -198,6 +199,9 @@ section {
     color: white;
 }
 
+.sidebar2:hover .straithLine {
+    box-shadow: 0px 2px 15px 1px #fff;
+}
 
 div.content {
     /* margin-left: 200px; */
@@ -954,3 +958,44 @@ footer {
 }
 
 /* Footer Section End */
+
+
+
+@keyframes appear {
+
+
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes appear2 {
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.aboutContainer,
+.skillSet {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+.skillBox {
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Custom-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -21,10 +22,14 @@
     </div>
     <div class="sidebar2 sidebar">
         <div class="socialContainerFixed row">
-            <a href="https://www.facebook.com/mahad.qureshi.2025/"><img src="images/facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/mahad.qureshi_x/"><img src="images/instagram.png" alt=""></a>
-            <a href="https://www.linkedin.com/in/mahad-qureshi-bbb55a209/"><img src="images/linkedin.png" alt=""></a>
-            <a href="https://www.freelancer.com/u/Mahadquresh"><img src="images/freelancer.png" alt=""></a>
+            <a href="https://www.facebook.com/mahad.qureshi.2025/" target="_blank"><img src="images/facebook.png"
+                    alt=""></a>
+            <a href="https://www.instagram.com/mahad.qureshi_x/" target="_blank"><img src="images/instagram.png"
+                    alt=""></a>
+            <a href="https://www.linkedin.com/in/mahad-qureshi-bbb55a209/" target="_blank"><img
+                    src="images/linkedin.png" alt=""></a>
+            <a href="https://www.freelancer.com/u/Mahadquresh" target="_blank"><img src="images/freelancer.png"
+                    alt=""></a>
             <a href="https://www.upwork.com/freelancers/~019e0356f9d016f4fa?mp_source=share"><img
                     src="images/upworkMain.png" alt=""></a>
         </div>
@@ -47,16 +52,23 @@
                     </div>
                     <div class="socialLinks flexCenter">
                         <div>
-                            <img src="images/fb.png" alt="">
+                            <a href="https://www.facebook.com/mahad.qureshi.2025/"> <img src="images/fb.png"
+                                    alt="facebook" target="_blank"></a>
                         </div>
                         <div>
-                            <img src="images/insta.png" alt="">
+                            <a href="https://www.instagram.com/mahad.qureshi_x/"> <img src="images/insta.png"
+                                    alt="instagram" target="_blank">
+                            </a>
                         </div>
                         <div>
-                            <img src="images/linkdien.png" alt="">
+                            <a href="https://www.linkedin.com/in/mahad-qureshi-bbb55a209/" target="_blank">
+                                <img src="images/linkdien.png" alt="linkdien">
+                            </a>
                         </div>
                         <div>
-                            <img src="images/gitHub.png" alt="">
+                            <a href="https://github.com/Mahad-Qureshi" target="_blank">
+                                <img src="images/gitHub.png" alt="GitHub">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +81,7 @@
                     <!-- <canvas id="three-canvas"></canvas> -->
                     <h1>Developer</h1>
                     <div class="flexContainer heroInner">
-                        <div class="heroSideCol">
+                        <div data-aos="flip-left" class="heroSideCol">
                             <div class="infoCard">
                                 <div class="infoCardHeader flexColumn">
                                     <div><img src="images/profilePhoto.png" alt=""></div>
@@ -151,7 +163,8 @@
                                 <span class="firstHead primaryColor">Hello! </span> <br><br>
                                 Hi, I’m Mahad Qureshi, a dedicated Web Developer with expertise in <span
                                     class="primaryColor"> WordPress, Shopify,
-                                React MUI, and front-end design.</span> I’m passionate about turning ideas into fully
+                                    React MUI, and front-end design.</span> I’m passionate about turning ideas into
+                                fully
                                 functional, visually engaging, and performance-driven websites. <br><br>
 
                                 Over the years, I’ve worked with diverse clients, delivering projects that combine
@@ -163,7 +176,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="smallCol">
+                    <div class="smallCol" data-aos="flip-left">
                         <img src="images/aboutImg.png" alt="">
                     </div>
                 </div>
@@ -423,6 +436,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script src="app.js"></script>
+
+    <!-- AOS DATA -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
